@@ -1,0 +1,65 @@
+react 시작 방법
+
+관리자권한으로 powershell 실행
+
+set-executionpolicy unrestricted
+
+npx create-react-app test-app(이건 프로젝트 이름에 따라 달라진다.)
+
+npm install wep-vitals 설치를 해야지 start를 할 때 err이 생기질 않는다
+
+실행은 npm start
+
+빌드실행은  npm run build
+
+ npm install -g serve
+
+serve -s build
+
+
+- 일반변수 : 바뀌면 다시 자동으로 rendering 안됨
+- state : 변수랑 비슷, 자료를 잠깐 저장하는 용도
+	state가 바뀌면 자동으로 rendering 되서 페이지가 바뀜
+
+
+-특정 모듈을 추가 설치하는 명령
+>npm install 모듈명
+>npm -i 모듈명
+>yarn add 모듈명
+
+https://www.toptal.com/developers/gitignore/
+
+-git 업로드 제외 디렉토리나 파일을 정의하는 사이트
+
+windows, react, visualstudiocode
+
+
+
+Router
+
+http://localhost:3000/login
+http://localhost:3000/main
+http://localhost:3000/detail?id=3
+
+Nested Route(중첩 라우팅)
+
+http://localhost:3000/admin/manager
+http://localhost:3000/admin/manager/login
+http://localhost:3000/admin/manager/logout
+http://localhost:3000/about
+http://localhost:3000/about/member
+http://localhost:3000/about/location
+
+
+url에 값을 전달하는 방법
+
+-GET : url에 경로 및 전달값을 표현해 주는 방식 (노출)
+1) 쿼리스트링(Query String)
+   http://localhost/idol?name=장원영&age=20
+
+2) PathVariable(경로변수)
+   http://localhost/idol/1
+{ name : '장원영', age: 20, position : '비쥬얼' }
+
+-POST : url에 경로만 보임(전달값은 보이지 않는다.)
+
