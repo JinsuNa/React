@@ -63,3 +63,11 @@ url에 값을 전달하는 방법
 
 -POST : url에 경로만 보임(전달값은 보이지 않는다.)
 
+설치도구 : 
+>npm install 프로그램명 yarn 설치 방법 : npm install -g yarn
+>yarn add 프로그램명
+>yarn add axios
+npm으로 뭔가를 설치를 했는데 문제가 생겼을 때
+yarn으로 재설치를 하면 해결
+
+
